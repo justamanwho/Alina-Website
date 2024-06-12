@@ -32,6 +32,7 @@ body {
 .left-panel {
     width: 50%;
     text-align: center;
+    color: #fff;
 }
 
 .logo {
@@ -102,7 +103,7 @@ body {
 .header h1 {
     font-size: 3rem;
     margin: 10px 0;
-    color: #ffd700;
+    color: #e3bfc0;
 }
 
 .header h2 {

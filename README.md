@@ -2,8 +2,12 @@
 The Personal Website Of My Big Sis
 
 
-- Instagram, Telegram and WhatsApp
-1. https://t.me/sixamprincess - Telegram
+- Telegram, WhatsApp and Instagram
+1. https://t.me/sixamprincess - Telegram Profile
+2. https://t.me/vidvertoprotaro - Telegram Canal
+3. https://wa.me/qr/Q5FSEMNWBPYWH1 - WhatsApp
+4. https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr - Instagram
+
 
 Допомагаю дійти до істини, яка є всередені Вас.
 
