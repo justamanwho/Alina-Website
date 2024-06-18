@@ -192,11 +192,33 @@ body {
 }
 
 /* Tarot Reading */
+.tarot-reading-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing between tabs */
+}
 
+.tarot-reading-tab {
+    width: calc(33% - 40px); /* Adjust width of each tab based on desired spacing */
+    margin: 20px; /* Adjust margin between tabs */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    background-repeat: repeat;
+    background-position: center;
+}
 
 
 
 /* Media Queries */
+@media (max-width: 768px) {
+    .tarot-reading-tab {
+        width: calc(50% - 40px); /* Single tab per row on very small screens */
+    }
+}
+
+
 @media (max-width: 550px) {
     .right-panel {
         margin-top: 130px; /* Ensure right panel does not overlap */
@@ -216,4 +238,7 @@ body {
         padding-top: 20px;
     }
 
+    .tarot-reading-tab {
+        width: calc(100% - 40px); /* Two tabs per row on smaller screens */
+    }
 }
