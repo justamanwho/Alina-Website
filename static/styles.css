@@ -1,11 +1,15 @@
 /* Smooth scrolling */
 html {
+    font-size: 110%;
     scroll-behavior: smooth;
 }
 
 /* Existing styles */
 body {
-    font-family: 'Merienda', cursive;
+    font-family: 'Playfair Display', serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     margin: 2;
     padding: 2;
     display: flex;
@@ -13,6 +17,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #220007;
+    color: #FFFFFF;
 }
 
 .container {
@@ -32,6 +37,20 @@ body {
     justify-content: space-between; /* Ensure space between the two panels */
     width: 50%; /* Full width of the parent container */
     padding: 20px; /* Add padding if necessary */
+}
+
+.message-container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between the two panels */
+    width: 70%; /* Full width of the parent container */
+    padding: 20px; /* Add padding if necessary */
+}
+
+.compatibility-astro-container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between the two panels */
+    width: 50%; /* Full width of the parent container */
+    padding: 10px; /* Add padding if necessary */
 }
 
 .fixed-right-corner {
@@ -83,14 +102,127 @@ body {
     margin-top: 35px;
 }
 
+.left-message-panel, .right-message-panel {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-message-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+}
+
+.right-message-panel {
+    width: 50%;
+    margin-top: 35px;
+}
+
+
+.left-compatibility-astro-panel, .right-compatibility-astro-panel {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left-compatibility-astro-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+
+#your-questions {
+    background-image: url('../static/questions_background.png'); /* Ensure the correct path */
+    background-size: cover; /* Make the image cover the section */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Ensure the text is readable over the background */
+#your-questions .header h1 {
+    color: #FFFFFF;
+},
+#your-questions .gold-header {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent; /* Make background transparent */
+}
+
+
+.compatibility-astro-background {
+    background-image: url('../static/brook_pink_background.png'); /* Ensure the correct path */
+    background-size: cover; /* Make the image cover the section */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Ensure the text is readable over the background */
+.compatibility-astro-background .header h1 {
+    color: #FFFFFF;
+},
+.compatibility-astro-background .gold-header {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent; /* Make background transparent */
+}
+
+.compatibility-astro-text-background {
+    background-image: url('../static/compatibility_astro_background.png'); /* Ensure the correct path */
+    background-size: cover; /* Make the image cover the section */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
 .ordinary-panel {
     width: 90%;
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
+}
+
+.compatibility-astro-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .logo-text-container {
@@ -113,7 +245,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align text to the right */
-    color: #FFFFFF;
 }
 
 .title-text h2 {
@@ -127,8 +258,20 @@ body {
 .instructions {
     margin: 20px 0;
     text-align: center; /* Center instructions text */
-    color: #FFFFFF;
 }
+
+.instructions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructions ul li::before {
+    content: '-';
+    display: inline-block;
+    width: 1em;
+}
+
 
 .instructions-navigation {
     margin-top: 50px;
@@ -191,16 +334,33 @@ body {
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
 }
 
 .header h1 {
     font-size: 3rem;
     margin: 10px 0;
     color: #e3bfc0;
+}
+
+.astrology-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.astrology-header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #FFFFFF;
+}
+
+.astrology-header h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #FFFFFF;
 }
 
 .services-buttons {
@@ -250,6 +410,22 @@ body {
     transform: scale(1.1);
 }
 
+.astrology-list {
+    font-size: 1.2rem;
+}
+
+.astrology-list ul li {
+    margin-bottom: 10px; /* Adjust the value to increase or decrease spacing */
+}
+
+.astrology-header h1 {
+    font-size: 2.2rem;
+}
+
+.astrology-header h2 {
+    font-size: 1.3rem;
+}
+
 /* Tarot Reading */
 .tarot-reading-section {
     margin: 20px;
@@ -262,9 +438,8 @@ body {
     width: calc(20% - 40px); /* Adjust width of each tab based on desired spacing */
     margin: 10px; /* Adjust margin between tabs */
     padding: 30px;
-    color: #fff;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 75px;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -286,6 +461,9 @@ body {
     .question-container {
         width: 70%;
     }
+    .compatibility-astro-container {
+        width: 70%;
+    }
 }
 
 
@@ -299,7 +477,16 @@ body {
     .question-container {
         width: 80%;
     }
+    .compatibility-astro-container {
+        width: 85%;
+    }
 
+    .message-container {
+        display: flex;
+        justify-content: space-between; /* Ensure space between the two panels */
+        width: 90%; /* Full width of the parent container */
+        padding: 20px; /* Add padding if necessary */
+    }
 }
 
 
@@ -333,4 +520,40 @@ body {
         width: 90%;
     }
 
+    .right-message-panel {
+        width: 0%;
+        margin-top: 0px;
+        padding: 0px;
+        display: none;
+    }
+
+    .astrology-header h1 {
+        font-size: 2rem;
+    }
+
+    .astrology-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .compatibility-astro-container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .left-compatibility-astro-panel {
+        padding: 3px;
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .right-compatibility-astro-panel {
+        width: 96%; /* Ensure it takes full width */
+    }
+
+    .compatibility-astro-panel {
+        gap: 20px;
+    }
+
+    .astrology-list {
+        font-size: 1.2rem;
+    }
 }
