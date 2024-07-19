@@ -216,6 +216,112 @@ body {
     margin-top: 70px;
 }
 
+#conclusion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.conclusion-panel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conclusion-background {
+    background-image: url('../static/conclusion_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    background-size: cover;
+    padding: 30px;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conclusion-panel .instructions p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+.conclusion-panel .instructions h1 {
+    font-size: 1.7rem;
+}
+
+.conclusion-background {
+    background-image: url('../static/conclusion_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+.the-end {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.important-panel {
+    width: 92%;
+    max-width: 800px;
+    background-color: #220007;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.important-panel .header h1 {
+    font-size: 2.5rem;
+    color: black; /* Change text color to white for contrast */
+    background: white; /* Red to lighter red gradient */
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: inline-block; /* Ensure the background fits the text width */
+}
+
+
+.important-panel .gold-header {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.important p {
+    margin-top: 90px;
+}
+
+.important-panel .instructions ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.important-panel .social-media a img {
+    width: 35px;
+    height: 35px;
+}
+
+.order {
+    font-size: 1.1rem;
+    margin-top: 50px;
+}
+
 .compatibility-astro-panel {
     width: 100%;
     display: flex;
@@ -487,6 +593,10 @@ body {
         width: 90%; /* Full width of the parent container */
         padding: 20px; /* Add padding if necessary */
     }
+
+    .conclusion-panel {
+        width: 80%;
+    }
 }
 
 
@@ -555,5 +665,9 @@ body {
 
     .astrology-list {
         font-size: 1.2rem;
+    }
+
+    .conclusion-panel {
+        width: 87%;
     }
 }
