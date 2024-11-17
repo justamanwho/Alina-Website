@@ -19,15 +19,6 @@
 <!--</div>-->
 
 
-<div class="language-container">
-    {% for code, option in language_options.items() %}
-    <form action="{{ url_for('set_language', lang_code=code) }}" method="get">
-        <button class="button-80 {% if lang == code %}active{% endif %}" role="button">
-            {{ option.name }}
-        </button>
-    </form>
-    {% endfor %}
-</div>
 
 
 <div class="container">
@@ -63,6 +54,27 @@
             </a>
             <a href="https://wa.me/qr/Q5FSEMNWBPYWH1" target="_blank"><img src="../static/whatsapp.svg" alt="WhatsApp"></a>
         </div>
+    </div>
+</div>
+
+
+<div class="language-container">
+    <div class="left-language-panel">
+        <h1>{{ translations['nav-language']['title'] }}</h1>
+    </div>
+
+    <div class="right-language-panel">
+        <div class="button-container">
+            {% for code, option in language_options.items() %}
+            <form action="{{ url_for('set_language', lang_code=code) }}" method="get">
+                <button class="button-80 {% if lang == code %}active{% endif %}" role="button">
+                    {{ option.name }}
+                </button>
+            </form>
+            {% endfor %}
+        </div>
+
+        <h2 class="translate-hint">*click to translate the page</h2>
     </div>
 </div>
 

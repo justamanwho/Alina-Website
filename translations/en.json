@@ -12,6 +12,10 @@
       "description": "Choose an option you prefer and text me in Telegram or WhatsApp"
   },
 
+  "nav-language": {
+    "title": "Services are available in"
+  },
+
   "nav-tarot-readings": {
     "general": {
       "title1": "| General |",

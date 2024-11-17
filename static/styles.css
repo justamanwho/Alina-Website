@@ -26,7 +26,7 @@ body {
     max-width: 1200px;
     background-color: #220007;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding-top: 100px;
 }
@@ -422,7 +422,7 @@ body {
 
 .services-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     background: #220007;
     color: #FFFFFF;
     border-radius: 10px;
@@ -608,20 +608,73 @@ body {
 }
  */
 
-/* Language Buttons */
+/* Language */
 
 .language-container {
-    position: absolute;
-    top: 20px;
-    gap: 3px;
-    right: 40px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Space between the left and right panels */
+    height: 100%; /* Ensure the container spans its parent's height */
+}
+
+.language-container h1 {
+    font-size: 1.85rem;
+    margin-right: 0px; /* Remove default margins */
+    display: flex;
+    align-items: center; /* Vertically align within the left panel */
+    height: 100%; /* Match the parent's height */
+}
+
+.language-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Allow panels to stretch to equal height */
+    text-align: center;
+    gap: 15px; /* Space between the left and right panels */
+    height: 100%;
+}
+
+.language-container h1 {
+    font-size: 1.65rem;
+    margin: 0; /* Remove default margins */
+}
+
+.left-language-panel {
+    width: 100%; /* Adjust width proportionally */
+    text-align: right; /* Align text to the right */
+    display: flex;
+    justify-content: flex-end; /* Align content horizontally */
+    align-items: flex-start; /* Align content to the top */
     flex-direction: column;
-    align-items: flex-end;
+    padding-bottom: 18px; /* Optional padding for spacing */
+}
+
+.right-language-panel {
+    padding-top: 18px; /* Optional padding for spacing */
+    width: 100%; /* Adjust width proportionally */
+    display: flex;
+    flex-direction: column; /* Stack buttons and hint vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center-align content horizontally */
+}
+
+.button-container {
+    display: flex; /* Keep buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.language-container h2 {
+    font-size: 0.9rem;
+    margin: 5px; /* Minimal margin */
+    color: #888; /* Subtle grey color */
+    text-align: center; /* Center-align text */
 }
 
 
-/* CSS */
+/* Buttons */
+
 .button-80 {
   background: #fff;
   backface-visibility: hidden;
@@ -633,11 +686,11 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: Circular,Helvetica,sans-serif;
-  font-size: 0.900rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -.01em;
   line-height: 1.3;
-  padding: .550rem .777rem;
+  padding: .570rem .900rem;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -726,9 +779,12 @@ body {
 }
 
 @media (max-width: 850px) {
+    .services-section {
+        width: 90%;
+    }
     .button-80 {
-      font-size: 0.800rem;
-      padding: .500rem .700rem;
+      font-size: 0.900rem;
+      padding: .600rem .800rem;
     }
 }
 
@@ -748,6 +804,7 @@ body {
     }
 
     .container {
+        width: 90%;
         padding-top: 20px;
     }
 
@@ -803,15 +860,29 @@ body {
         width: 87%;
     }
 
+
     .language-container {
-        position: absolute;
-        top: 10px;
-        gap: 3px;
-        right: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        margin-top: 10px;
+        flex-direction: column; /* Stack the panels vertically */
+        align-items: center;
+        gap: 12px; /* Add space between the panels */
     }
+
+    .language-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .left-language-panel {
+        align-items: center;
+        width: 90%; /* Adjust width proportionally */
+        padding-bottom: 0px; /* Optional padding for spacing */
+    }
+
+    .right-language-panel {
+        padding-top: 0px; /* Optional padding for spacing */
+        width: 90%; /* Adjust width proportionally */
+    }
+
 }
 
 @media (max-width: 380px) {

@@ -12,6 +12,10 @@
       "description": "Выбери подходящий вариант и напиши мне в Telegram или WhatsApp"
   },
 
+  "nav-language": {
+    "title": "Услуги доступны на"
+  },
+
   "nav-tarot-readings": {
     "general": {
       "title1": "| Общий |",
