@@ -359,6 +359,7 @@ body {
 .instructions {
     margin: 20px 0;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .instructions ul {
@@ -488,10 +489,6 @@ body {
     background-color: #5e1a29;
 }
 
-.instructions {
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
 
 .contact-icons {
     display: flex;
@@ -535,7 +532,7 @@ body {
 }
 
 .tarot-reading-tab {
-    width: calc(20% - 40px);
+    width: calc(30% - 60px);
     margin: 10px;
     padding: 30px;
     text-align: center;
@@ -679,6 +676,44 @@ body {
     margin-bottom: 30px;
 }
 
+.types-of-requests-section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* This centers the tabs horizontally */
+}
+
+.types-of-requests-tab {
+    width: calc(25% - 40px);
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; /* Adjust this value to reduce the zoom */
+}
+
+.quite-violet-text {
+    color: #b75b7d;
+}
+
+.increase-font .instructions{
+    font-size: 130%;
+}
+
+.tarot-consultation-panel {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  /* Center the text inside */
+    margin-top: 70px;
+}
+
+
 .list-with-dashes li {
     list-style-type: none; /* Remove default bullets */
     display: relative; /* Keep the hyphen next to the text */
@@ -794,6 +829,11 @@ body {
         top: 20px;
         right: 10px;
     }
+
+    .types-of-requests-tab {
+        width: calc(50% - 40px); /* Make tabs take more space */
+        background-size: cover;  /* Fill more space */
+    }
 }
 
 @media (max-width: 850px) {
@@ -801,8 +841,12 @@ body {
         width: 90%;
     }
     .button-80 {
-      font-size: 0.900rem;
-      padding: .600rem .800rem;
+        font-size: 0.900rem;
+        padding: .600rem .800rem;
+    }
+
+    .tarot-consultation-panel {
+        width: 100%;
     }
 }
 
@@ -904,6 +948,11 @@ body {
     .about-me-panel {
         width: 80%;
     }
+
+    .types-of-requests-tab {
+        width: calc(90% - 40px); /* Make tabs take more space */
+    }
+
 
 }
 

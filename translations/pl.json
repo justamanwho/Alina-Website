@@ -4,6 +4,8 @@
   "services": {
       "services": "USŁUGI",
       "tarot-readings": "WRÓŻBY TAROTA",
+      "tarot-session": "TAROT SESJA",
+      "tarot-consultation": "TAROT KONSULTACJA",
       "important": "WAŻNE",
       "consultation": "KONSULTACJA",
       "your-questions": "TWOJE PYTANIA",
@@ -12,7 +14,6 @@
       "about-me": "O MNIE",
       "formats": "FORMATY",
       "types-of-requests": "RODZAJE ZAPYTAŃ",
-      "2025": "TAROT NA ROK 2025 -20% TANIEJ",
       "description": "Wybierz preferowaną opcję i napisz do mnie na Telegramie lub WhatsAppie"
   },
 
@@ -20,7 +21,30 @@
     "title": "Usługi dostępne w"
   },
 
-  "nav-types-of-requests": {
+
+  "nav-tarot-session": {
+    "info": "to analiza Twojego zapytania, która odbywa się na Telegramie o wyznaczonej godzinie w formie wiadomości wideo.",
+    "title": "JAK TO DZIAŁA?",
+    "1": "Przychodzisz z zapytaniem (przykłady tematów są poniżej) i opisujesz sytuację.",
+    "2": "Odpowiadam na Twoje pytania, rozwijam temat i utrzymuję interakcję przez całą sesję, aby omówić dodatkowe pytania i spostrzeżenia.",
+    "3": "Pytania, które analizuję na kartach, są dobierane indywidualnie do Twojego zapytania."
+  },
+
+  "nav-types-of-requests-full": {
+    "header": "PRZYKŁADY ZAPYTAŃ",
+    "description": "dla pełnych analiz",
+    "title1": "prognoza na konkretny okres: do 6 miesięcy",
+    "1": "energie, stan emocjonalny, rozwój materialny, życie romantyczne, co przyniesie radość, na co uważać, porady",
+    "title2": "analiza Państwa relacji",
+    "2": "wpływ tych relacji na Państwa życie, perspektywy rozwoju, trudności, karma, istotne kwestie, porady",
+    "title3": "transformacja",
+    "3": "jak będzie wyglądać Państwa rzeczywistość, jeśli... (na przykład przeprowadzą się Państwo teraz do innego miasta), jak harmonijnie przejść na nowy etap",
+    "title4": "pomoc sobie: samopoznanie",
+    "4": "prawdziwe pragnienia i potrzeby, jak je zaspokoić, przyczyny trudnego stanu emocjonalnego, jak sobie pomóc"
+  },
+
+
+  "nav-types-of-requests-mini": {
     "header": "PRZYKŁADY ZAPYTAŃ",
     "description": "dla mini analiz",
     "title1": "analiza sytuacji",
@@ -44,6 +68,30 @@
     "3": "* nieograniczona liczba pytań przez 1,5 godziny, z omówieniem sytuacji",
     "price3": "$90 (usd)",
     "notice": "przed konsultacją wymagane jest darmowe zdiagnozowanie twojego zapytania w korespondencji"
+  },
+
+  "nav-tarot-consultation": {
+    "info": "To wideorozmowa trwająca do 90 minut, podczas której analizujemy i omawiamy interesujące Cię tematy za pomocą Tarota",
+    "title": "Zalety formatu konsultacji:",
+    "1": "możliwość analizy więcej niż jednego zapytania",
+    "2": "nieograniczona liczba pytań do Tarota przez 1,5 godziny",
+    "3": "takie bezpośrednie interakcje pozwalają bardziej szczegółowo zgłębić temat",
+    "4": "w trakcie rozmowy pojawia się więcej pytań, niż mogłeś zaplanować wcześniej"
+  },
+
+  "nav-price": {
+    "title": "CENNIK",
+    "title1": "Pełna analiza jednego zapytania",
+    "description1": "Od 7 do 10 odpowiedzi",
+    "description11": "~ 1 godzina",
+    "price1": "$55(CAD)",
+    "title2": "Mini analiza sytuacji",
+    "description2": "Do 3 odpowiedzi",
+    "price2": "$27(CAD)",
+    "title3": "Konsultacja Tarota",
+    "description3": "Do 1,5 godziny",
+    "price3": "$88(CAD)",
+    "notice": "Każda odpowiedź jest szczegółowa i wyczerpująca"
   },
 
   "nav-about-me": {

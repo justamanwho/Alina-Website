@@ -5,6 +5,8 @@
       "services": "SERVICES",
       "tarot-readings": "TAROT READINGS",
       "important":  "IMPORTANT",
+      "tarot-session": "TAROT SESSION",
+      "tarot-consultation": "TAROT CONSULTATION",
       "consultation": "CONSULTATION",
       "your-questions": "YOUR QUESTIONS",
       "quick-message": "QUICK MESSAGE",
@@ -12,7 +14,6 @@
       "about-me": "ABOUT ME",
       "formats": "FORMATS",
       "types-of-requests": "TYPES OF REQUESTS",
-      "2025": "TAROT READINGS OF YEAR 2025  -20% OFF",
       "description": "Choose an option you prefer and text me in Telegram or WhatsApp"
   },
 
@@ -20,7 +21,29 @@
     "title": "Services are available in"
   },
 
-  "nav-types-of-requests": {
+
+  "nav-tarot-session": {
+    "info": "this is an analysis of your request, conducted on Telegram at the scheduled time in the format of video messages.",
+    "title": "HOW DOES IT WORK?",
+    "1": "You come with a request (examples of topics are listed below) and describe the situation.",
+    "2": "I provide answers, revealing your topic, and maintain interaction with you throughout the session to discuss your additional questions and insights.",
+    "3": "The questions I analyze with the cards are selected individually based on your request."
+  },
+
+  "nav-types-of-requests-full": {
+    "header": "EXAMPLES OF REQUESTS",
+    "description": "for comprehensive analyses",
+    "title1": "forecast for a specific period: up to 6 months",
+    "1": "energies, emotional state, material growth, romantic life, sources of joy, what to be cautious of, advice",
+    "title2": "analysis of Your relationships",
+    "2": "the impact of these relationships on Your life, development prospects, challenges, karma, important aspects, advice",
+    "title3": "transformation",
+    "3": "what Your reality will look like if You... (for example, move to another city now), exploring how to transition harmoniously to a new stage",
+    "title4": "self-help: self-discovery",
+    "4": "true desires and needs, how to fulfill them, reasons behind Your emotional difficulties, how to support Yourself"
+  },
+
+  "nav-types-of-requests-mini": {
     "header": "TYPES OF REQUESTS",
     "description": "for mini analyses",
     "title1": "situation analysis",
@@ -44,6 +67,30 @@
     "3": "* unlimited number of questions for 1.5 hours, with a discussion of the situation",
     "price3": "$90 (usd)",
     "notice": "a free diagnostic of your request via correspondence is required before the consultation"
+  },
+
+  "nav-tarot-consultation": {
+    "info": "This is a video call lasting up to 90 minutes, where we analyze and discuss topics that concern you using Tarot",
+    "title": "Advantages of the Consultation Format:",
+    "1": "possibility to analyze more than one inquiry",
+    "2": "unlimited number of Tarot questions for 1.5 hours",
+    "3": "such live interaction allows for a more detailed exploration of the topic",
+    "4": "during the process, more questions arise than you might have planned in advance"
+  },
+
+  "nav-price": {
+    "title": "PRICE",
+    "title1": "Full Analysis of One Request",
+    "description1": "From 7 to 10 answers",
+    "description11": "~ 1 hour",
+    "price1": "$55(CAD)",
+    "title2": "Mini Situation Analysis",
+    "description2": "Up to 3 answers",
+    "price2": "$27(CAD)",
+    "title3": "Tarot Consultation",
+    "description3": "Up to 1.5 hours",
+    "price3": "$88(CAD)",
+    "notice": "Each answer is detailed and comprehensive"
   },
 
 
@@ -177,8 +224,8 @@
     "order": "TO ORDER:"
   },
   "nav-conclusion": {
-    "1": "There are multiple options of future, not just one. Thanks to Tarot we can see what’s most likely going to happen and we can get some guidance on how to get to Reality that we want.",
-    "2": "All of the answers are already inside you: this is basically a work with your subconscious. I help you to understand yourself and the situation better.",
+    "1": "There are multiple options for the future, not just one. Thanks to Tarot, we can see what is most likely going to happen and receive guidance on how to create the reality we want.",
+    "2": "All the answers are already within you: this is essentially work with your subconscious. I help you understand yourself and the situation better.",
     "the-end": "YOU ARE THE CREATOR OF YOUR REALITY"
   }
 }
