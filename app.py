@@ -1,5 +1,6 @@
-from flask import Flask, render_template, redirect, url_for, session
+from flask import Flask, render_template, redirect, url_for, session, request, jsonify
 from dotenv import load_dotenv
+import requests
 import json
 import os
 
@@ -37,6 +38,20 @@ def index():
                            lang=session['lang'],
                            language_options=LANGUAGE_OPTIONS,
                            max_length=max_length)
+
+JOJO_BOT_URL = "https:127.0.0.1:8443/webhook'
+
+@app.route("/jojo-webhook", methods=["POST"])
+def jojo_webhook():
+    try:
+	update = request.get_json()
+	response = requests.post(JOJO_BOT_URL, json=update, timeout=5)
+
+	return jsonify(response.json()), response.status_code
+
+    except Exception as e:
+	return jsonify({"error": str(e)}), 500
+
 
 
 @app.route('/set_language/<lang_code>')
