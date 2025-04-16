@@ -9,7 +9,7 @@ The Website About Tarot Reading Services
 3. https://t.me/vidvertoprotaro - Telegram Canal
 4. https://wa.me/qr/Q5FSEMNWBPYWH1 - WhatsApp
 5. https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr - Instagram
-
+6. https://www.youtube.com/@sixamprincess - YouTube
 
                    Description
 
