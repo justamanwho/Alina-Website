@@ -23,15 +23,29 @@
 
   "discount": "-20% на все услуги до 1 апреля (включно)",
 
-  "nav-about-me": {
-    "header": "Обо мне",
-    "text1": "Я Алина! С 2021 года я помогаю людям находить ответы на их вопросы с помощью таких инструментов, как:",
+"nav-about-me": {
+  "header": "Обо мне",
+  "intro-text": "Я Алина! С 2021 года я помогаю людям находить ответы на их вопросы с помощью таких инструментов, как:",
+
+  "tools": {
     "1": "карты таро и оракульные карты",
     "2": "мои знания в астрологии и психологии",
     "3": "мои интуитивные знания",
-    "4": "мой опыт",
-    "text2": "Ближе со мной можно познакомиться через мой <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> и канал <a href=\"https://t.me/alinatarottherapy\">Telegram</a>"
+    "4": "мой опыт"
   },
+
+  "telegram-section-title": "В <a href=\"https://t.me/alinatarottherapy\">Telegram</a>-канале",
+  "telegram-section-points": {
+    "1": "готовые схемы для раскладов + 🎁 скидки для подписчиков",
+    "2": "общие расклады выбери карту и другое"
+  },
+
+  "reviews-title": "Отзывы",
+  "reviews-note": "Можно посмотреть в актуальном в <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a>",
+
+  "more-info": "Больше узнать обо мне можно через мой <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> и <a href=\"https://t.me/alinatarottherapy\">Telegram</a> канал."
+},
+
 
 
   "nav-tarot-session": {
@@ -100,9 +114,12 @@
     "title2": "Мини разбор ситуации",
     "description2": "До 3 ответов",
     "price2": "$27(CAD)",
-    "title3": "Консультация Таро",
-    "description3": "До 1,5 часов",
-    "price3": "$88(CAD)",
+    "title3": "Экспресс расклад",
+    "description3": "один ответ на ваш вопрос",
+    "price3": "$9(CAD)",
+    "title4": "Консультация Таро",
+    "description4": "До 1,5 часов",
+    "price4": "$88(CAD)",
     "notice": "Каждый ответ детальный и развернутый"
   },
 

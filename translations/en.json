@@ -23,15 +23,29 @@
 
   "discount": "-20% on all services until April 1 (inclusive)",
 
-  "nav-about-me": {
-    "header": "About Me",
-    "text1": "I am Alina! Since 2021, I have been helping people find answers to their questions using such tools as:",
+"nav-about-me": {
+  "header": "About Me",
+  "intro-text": "I am Alina! Since 2021, I have been helping people find answers to their questions using such tools as:",
+
+  "tools": {
     "1": "tarot cards and oracle cards",
     "2": "my knowledge of astrology and psychology",
     "3": "my intuitive knowledge",
-    "4": "my experience",
-    "text2": "You can get to know me better through my <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> and my <a href=\"https://t.me/alinatarottherapy\">Telegram</a> channel "
+    "4": "my experience"
   },
+
+  "telegram-section-title": "In my Telegram channel",
+  "telegram-section-points": {
+    "1": "pre-made tarot layouts + 🎁 subscriber-only discounts",
+    "2": "general pick-a-card readings and more"
+  },
+
+  "reviews-title": "Reviews",
+  "reviews-note": "Can be found in my Instagram highlights",
+
+  "more-info": "You can get to know me better through my <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> and my <a href=\"https://t.me/alinatarottherapy\">Telegram</a> channel."
+},
+
 
   "nav-tarot-session": {
     "info": "is a conversation where I guide you through your request, providing insights and answers to your questions.",
@@ -98,9 +112,12 @@
     "title2": "Mini Situation Analysis",
     "description2": "Up to 3 answers",
     "price2": "$27(CAD)",
-    "title3": "Tarot Consultation",
-    "description3": "Up to 1.5 hours",
-    "price3": "$88(CAD)",
+    "title3": "Express reading",
+    "description3": "one answer to your question",
+    "price3": "$9(CAD)",
+    "title4": "Tarot Consultation",
+    "description4": "Up to 1.5 hours",
+    "price4": "$88(CAD)",
     "notice": "Each answer is detailed and comprehensive"
   },
 

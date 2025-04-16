@@ -23,15 +23,29 @@
 
   "discount": "-20% na wszystkie usługi do 1 kwiećnia (włącznie)",
 
-  "nav-about-me": {
-    "header": "O mnie",
-    "text1": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
+"nav-about-me": {
+  "header": "O mnie",
+  "intro-text": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
+
+  "tools": {
     "1": "karty tarota",
     "2": "moja wiedza z zakresu astrologii i psychologii",
     "3": "moja intuicyjna wiedza",
-    "4": "moje doświadczenie",
-    "text2": "Możesz lepiej mnie poznać przez mój <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> i kanał <a href=\"https://t.me/alinatarottherapy\">Telegram</a>."
+    "4": "moje doświadczenie"
   },
+
+  "telegram-section-title": "W moim kanale Telegram",
+  "telegram-section-points": {
+    "1": "gotowe schematy rozkładów + 🎁 zniżki dla subskrybentów",
+    "2": "ogólne rozkłady „wybierz kartę” i inne"
+  },
+
+  "reviews-title": "Opinie",
+  "reviews-note": "Można je znaleźć w wyróżnionych relacjach na Instagramie",
+
+  "more-info": "Możesz lepiej mnie poznać przez mój <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> i kanał <a href=\"https://t.me/alinatarottherapy\">Telegram</a>."
+},
+
 
   "nav-tarot-session": {
     "info": "to analiza Twojego zapytania, która odbywa się na Telegramie o wyznaczonej godzinie.",
@@ -99,9 +113,12 @@
     "title2": "Mini analiza sytuacji",
     "description2": "Do 3 odpowiedzi",
     "price2": "$27(CAD)",
-    "title3": "Konsultacja Tarota",
-    "description3": "Do 1,5 godziny",
-    "price3": "$88(CAD)",
+    "title3": "Ekspresowy rozkład",
+    "description3": "jedna odpowiedź na twoje pytanie",
+    "price3": "$9(CAD)",
+    "title4": "Konsultacja Tarota",
+    "description4": "Do 1,5 godziny",
+    "price4": "$88(CAD)",
     "notice": "Każda odpowiedź jest szczegółowa i wyczerpująca"
   },
 

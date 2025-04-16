@@ -23,15 +23,29 @@
 
   "discount": "-20% на всі послуги до 1 квітня (включно)",
 
-  "nav-about-me": {
-    "header": "Про мене",
-    "text1": "Я Аліна! З 2021 року я допомагаю людям знаходити відповіді на їхні питання за допомогою таких інструментів, як:",
+"nav-about-me": {
+  "header": "Про мене",
+  "intro-text": "Я Аліна! З 2021 року я допомагаю людям знаходити відповіді на їхні питання за допомогою таких інструментів, як:",
+
+  "tools": {
     "1": "карти таро і оракульні карти",
     "2": "мої знання в астрології та психології",
     "3": "мої інтуїтивні знання",
-    "4": "мій досвід",
-    "text2": "Більше дізнатися про мене можна через мій <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> та канал у <a href=\"https://t.me/alinatarottherapy\">Telegram</a>."
+    "4": "мій досвід"
   },
+
+  "telegram-section-title": "В <a href=\"https://t.me/alinatarottherapy\">Telegram</a> каналі",
+  "telegram-section-points": {
+    "1": "готові схеми для розкладів + 🎁 знижки для підписників",
+    "2": "загальні розклади \"обери карту\" та інше"
+  },
+
+  "reviews-title": "Відгуки",
+  "reviews-note": "Можна подивитись в актуальних в <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a>",
+
+  "more-info": "Більше дізнатися про мене можна через мій <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> та канал у <a href=\"https://t.me/alinatarottherapy\">Telegram</a>."
+},
+
 
   "nav-types-of-requests-full": {
     "header": "ПРИКЛАДИ ЗАПИТІВ",
@@ -100,9 +114,12 @@
     "title2": "Міні розбір ситуації",
     "description2": "До 3 відповідей",
     "price2": "$27(cad)",
-    "title3": "Консультація Таро",
-    "description3": "До 1,5 години",
-    "price3": "$88(cad)",
+    "title3": "Експрес розклад",
+    "description3": "одна відповідь на ваше питання",
+    "price3": "$9(cad)",
+    "title4": "Консультація Таро",
+    "description4": "До 1,5 години",
+    "price4": "$88(cad)",
     "notice": "Кожна відповідь детальна і розгорнута"
   },
 

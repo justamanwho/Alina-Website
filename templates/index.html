@@ -76,7 +76,9 @@
 
     <div class="services-buttons">
         <a href="#tarot-session" class="service-btn">{{ translations['services']['tarot-session'] }}</a>
+        {% if lang != 'pl' and lang != 'en' %}
         <a href="#tarot-consultation" class="service-btn">{{ translations['services']['tarot-consultation'] }}</a>
+        {% endif %}
         <a href="#price" class="service-btn">{{ translations['nav-price']['title'] }}</a>
 
     </div>
@@ -104,18 +106,26 @@
     </div>
 
     <div class="instructions">
-        <p>
-            {{ translations['nav-about-me']['text1'] }}
-        </p>
+        <p>{{ translations['nav-about-me']['intro-text'] }}</p>
+
         <ul class="list-with-dashes">
-            <li>{{ translations['nav-about-me']['1'] }}</li>
-            <li>{{ translations['nav-about-me']['2'] }}</li>
-            <li>{{ translations['nav-about-me']['3'] }}</li>
-            <li>{{ translations['nav-about-me']['4'] }}</li>
+            <li>{{ translations['nav-about-me']['tools']['1'] }}</li>
+            <li>{{ translations['nav-about-me']['tools']['2'] }}</li>
+            <li>{{ translations['nav-about-me']['tools']['3'] }}</li>
+            <li>{{ translations['nav-about-me']['tools']['4'] }}</li>
         </ul>
-        <p>
-            {{ translations['nav-about-me']['text2'] | safe }}
-        </p>
+
+        {% if lang not in ['en', 'pl'] %}
+        <h3>{{ translations['nav-about-me']['telegram-section-title']  | safe }}</h3>
+        <ul class="list-with-dashes">
+            <li>{{ translations['nav-about-me']['telegram-section-points']['1'] }}</li>
+            <li>{{ translations['nav-about-me']['telegram-section-points']['2'] }}</li>
+        </ul>
+
+        <h3>{{ translations['nav-about-me']['reviews-title'] }}</h3>
+        <p>{{ translations['nav-about-me']['reviews-note']  | safe }}</p>
+        {% endif %}
+<!--        <p>{{ translations['nav-about-me']['more-info'] | safe }}</p>-->
     </div>
 </div>
 
@@ -140,6 +150,7 @@
 </div>
 
 
+{% if lang != 'pl' and lang != 'en' %}
 <div class="tarot-consultation-panel">
     <div id="tarot-consultation" class="header">
         <h1>{{ translations['services']['tarot-consultation'] }}</h1>
@@ -158,9 +169,8 @@
             <li>{{ translations['nav-tarot-consultation']['4'] }}</li>
         </ul>
     </div>
-
 </div>
-
+{% endif %}
 
 
 <div class="ordinary-panel">
@@ -188,6 +198,15 @@
                 {{ translations['nav-price']['description3'] }}
             </p>
             <div class="gold-header">{{ translations['nav-price']['price3'] }}</div> <br>
+
+            {% if lang != 'pl' and lang != 'en' %}
+            <p>
+                {{ translations['nav-price']['title4'] }} <br>
+                {{ translations['nav-price']['description4'] }}
+            </p>
+            <div class="gold-header">{{ translations['nav-price']['price4'] }}</div> <br>
+            {% endif %}
+
         </div>
     </div>
 </div>
