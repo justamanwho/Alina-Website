@@ -59,47 +59,5 @@ def jojo_reference_avdol():
     return '<img src="../static/avdol.png" alt="Avdol">'
 
 
-# Webhooks for telegram bots
-
-JOJO_BOT_URL = "https:127.0.0.1:8443/jojo-webhook"
-CHESS_BOT_URL = "https:127.0.0.1:8444/chess-webhook"
-THE_WORLD_BOT_URL = "https:127.0.0.1:8445/the-world-webhook"
-
-@app.route("/jojo-webhook", methods=["POST"])
-def jojo_webhook():
-    try:
-        update = request.get_json()
-        response = requests.post(JOJO_BOT_URL, json=update, timeout=5)
-
-        return jsonify(response.json()), response.status_code
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/chess-webhook", methods=["POST"])
-def chess_webhook():
-    try:
-        update = request.get_json()
-        response = requests.post(CHESS_BOT_URL, json=update, timeout=5)
-
-        return jsonify(response.json()), response.status_code
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/the-world-webhook", methods=["POST"])
-def the_world_webhook():
-    try:
-        update = request.get_json()
-        response = requests.post(THE_WORLD_BOT_URL, json=update, timeout=5)
-
-        return jsonify(response.json()), response.status_code
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
 if __name__ == '__main__':
     app.run()
