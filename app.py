@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, session, request, jsonify
 from dotenv import load_dotenv
-import requests
 import json
 import os
 
