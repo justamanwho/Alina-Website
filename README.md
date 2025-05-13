@@ -1,33 +1,21 @@
-# alina tarot
-The Website About Tarot Reading Services
+# Alina Website
 
+**Tarot Readings & Spiritual Guidance**  
 
-                     Links
+---
 
-1. https://astrotaroelin.com - Website itself
-2. https://t.me/sixamprincess - Telegram Profile
-3. https://t.me/vidvertoprotaro - Telegram Canal
-4. https://wa.me/qr/Q5FSEMNWBPYWH1 - WhatsApp
-5. https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr - Instagram
-6. https://www.youtube.com/@sixamprincess - YouTube
+## 🔗 Links
 
-                   Description
+- [Website](https://astrotaroelin.com)
+- [Telegram (Profile)](https://t.me/sixamprincess)
+- [Telegram Channel](https://t.me/vidvertoprotaro)
+- [WhatsApp](https://wa.me/qr/Q5FSEMNWBPYWH1)
+- [Instagram](https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr)
+- [YouTube](https://www.youtube.com/@sixamprincess)
 
-Helping you to reach the truth that you already have inside you. 
-My services are available in 4 languages: Ukrainian, English, Polish, Russian.
+---
 
+## 🧾 Description
 
-What I use:
-- Tarot Cards / Oracle cards
-- 4 years of experience
-- Psychology
-- Esoteric
-
-
-My Services:
-- Tarot readings
-- Video call
-- Your questions
-- Quick message
-- Compatibility astro
-
+Helping you uncover the truth you already carry inside.  
+Readings and guidance available in **Ukrainian**, **English**, **Polish**, and **Russian**.
