@@ -19,3 +19,6 @@
 
 Helping you uncover the truth you already carry inside.  
 Readings and guidance available in **Ukrainian**, **English**, **Polish**, and **Russian**.
+
+
+## 📋 To-Do List

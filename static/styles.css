@@ -7,16 +7,29 @@ html {
 body {
     font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
-    margin: 2;
-    padding: 2;
+    margin: 10px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background-color: #220007;
     color: #FFFFFF;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    overflow-anchor: none;
 }
 
 @font-face {
@@ -39,6 +52,7 @@ body {
     flex-direction: row;
     width: 80%;
     max-width: 1200px;
+    overflow-x: hidden;
     background-color: #220007;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -108,8 +122,8 @@ body {
 .left-question-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 .right-question-panel {
@@ -167,7 +181,7 @@ body {
 
 #your-questions .header h1 {
     color: #FFFFFF;
-},
+}
 
 #your-questions .gold-header {
     padding: 0;
@@ -194,7 +208,8 @@ body {
 
 .compatibility-astro-background .header h1 {
     color: #FFFFFF;
-},
+}
+
 .compatibility-astro-background .gold-header {
     padding: 0;
     border-radius: 0;
@@ -252,7 +267,6 @@ body {
     border-radius: 25px;
     background-size: cover;
     padding: 30px;
-    padding-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -280,7 +294,7 @@ body {
 .the-end {
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -291,20 +305,19 @@ body {
     color: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
-    margin-top: 70px;
+    margin: 70px auto 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .important-panel .header h1 {
     font-size: 2.5rem;
-    color: black; /* Change text color to black for contrast */
-    background: white; /* White background for black header (very beautiful) */
+    color: black;
+    background: white;
     padding: 10px;
     border-radius: 25px;
     margin-bottom: 20px;
-    display: inline-block; /* Ensure the background fits the text width */
+    display: inline-block;
 }
 
 
@@ -622,24 +635,24 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 15px; /* Space between the left and right panels */
-    height: 100%; /* Ensure the container spans its parent's height */
+    gap: 15px;
+    height: 100%;
 }
 
 .language-container h1 {
     font-size: 1.85rem;
-    margin-right: 0px; /* Remove default margins */
+    margin-right: 0;
     display: flex;
-    align-items: center; /* Vertically align within the left panel */
-    height: 100%; /* Match the parent's height */
+    align-items: center;
+    height: 100%;
 }
 
 .language-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Allow panels to stretch to equal height */
+    align-items: stretch;
     text-align: center;
-    gap: 15px; /* Space between the left and right panels */
+    gap: 15px;
     height: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -647,38 +660,38 @@ body {
 
 .language-container h1 {
     font-size: 1.65rem;
-    margin: 0; /* Remove default margins */
+    margin: 0;
 }
 
 .left-language-panel {
-    width: 100%; /* Adjust width proportionally */
-    text-align: right; /* Align text to the right */
+    width: 100%;
+    text-align: right;
     display: flex;
-    justify-content: flex-end; /* Align content horizontally */
-    align-items: flex-start; /* Align content to the top */
+    justify-content: flex-end;
+    align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 18px; /* Optional padding for spacing */
+    padding-bottom: 18px;
 }
 
 .right-language-panel {
-    padding-top: 18px; /* Optional padding for spacing */
-    width: 100%; /* Adjust width proportionally */
+    padding-top: 18px;
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Stack buttons and hint vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center-align content horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-container {
-    display: flex; /* Keep buttons in a row */
-    gap: 10px; /* Space between buttons */
+    display: flex;
+    gap: 10px;
 }
 
 .language-container h2 {
     font-size: 0.9rem;
-    margin: 5px; /* Minimal margin */
-    color: #888; /* Subtle grey color */
-    text-align: center; /* Center-align text */
+    margin: 5px;
+    color: #888;
+    text-align: center;
 }
 
 
@@ -696,7 +709,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center; /* This centers the tabs horizontally */
+    justify-content: center;
 }
 
 .types-of-requests-tab {
@@ -707,7 +720,7 @@ body {
     border-radius: 75px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% 100%; /* Adjust this value to reduce the zoom */
+    background-size: 100% 100%;
 }
 
 .quite-violet-text {
@@ -724,33 +737,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;  /* Center the text inside */
+    text-align: center;
     margin-top: 70px;
 }
 
 
 .list-with-dashes li {
-    list-style-type: none; /* Remove default bullets */
-    display: relative; /* Keep the hyphen next to the text */
+    list-style-type: none;
+    position: relative;
 }
 
 .list-with-dashes li::before {
-    content: "- "; /* Add the hyphen and a space */
-    margin-right: 5px; /* Optional: adds a small space between the hyphen and the text */
+    content: "- ";
+    margin-right: 5px;
 }
 
 .tarot-reading-tab ul li {
-    margin-bottom: 10px; /* Adjust the space between list items */
-    padding-bottom: 5px; /* Optional: adds padding */
-    line-height: 1.8; /* Optional: increases line spacing */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    line-height: 1.8;
 }
 
 a {
-    color: yellow; /* Changes the color of all links to yellow */
+    color: yellow;
 }
 
 .request-type h2 {
-    margin-bottom: 0px; /* Adjust this value to reduce the gap */
+    margin-bottom: 0;
 }
 
 .request-type p {
@@ -760,7 +773,7 @@ a {
 .request-type {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
 }
 
 .note {
@@ -845,7 +858,7 @@ a {
 
 @media (max-width: 1200px) {
     .tarot-reading-tab {
-        width: calc(50% - 40px); /* Single tab per row on very small screens */
+        width: calc(50% - 40px);
     }
     .brook-image {
         display: none;
@@ -874,8 +887,8 @@ a {
     }
 
     .types-of-requests-tab {
-        width: calc(50% - 40px); /* Make tabs take more space */
-        background-size: cover;  /* Fill more space */
+        width: calc(50% - 40px);
+        background-size: cover;
     }
 }
 
@@ -894,6 +907,10 @@ a {
 }
 
 @media (max-width: 650px) {
+    .header h1 {
+        font-size: 2.5rem !important;
+    }
+
     .right-panel {
         margin-top: 130px;
     }
@@ -904,8 +921,8 @@ a {
 
     .left-panel {
         width: 50%;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .container {
@@ -925,9 +942,9 @@ a {
     }
 
     .right-message-panel {
-        width: 0%;
-        margin-top: 0px;
-        padding: 0px;
+        width: 0;
+        margin-top: 0;
+        padding: 0;
         display: none;
     }
 
@@ -965,12 +982,16 @@ a {
         width: 87%;
     }
 
+    .conclusion-background {
+        padding: 20px;
+    }
+
 
     .language-container {
         margin-top: 10px;
-        flex-direction: column; /* Stack the panels vertically */
+        flex-direction: column;
         align-items: center;
-        gap: 12px; /* Add space between the panels */
+        gap: 12px;
     }
 
     .language-container h1 {
@@ -979,13 +1000,13 @@ a {
 
     .left-language-panel {
         align-items: center;
-        width: 90%; /* Adjust width proportionally */
-        padding-bottom: 0px; /* Optional padding for spacing */
+        width: 90%;
+        padding-bottom: 0;
     }
 
     .right-language-panel {
-        padding-top: 0px; /* Optional padding for spacing */
-        width: 90%; /* Adjust width proportionally */
+        padding-top: 0;
+        width: 90%;
     }
 
     .about-me-panel {
@@ -993,14 +1014,18 @@ a {
     }
 
     .types-of-requests-tab {
-        width: calc(90% - 40px); /* Make tabs take more space */
+        width: calc(90% - 40px);
     }
 
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .container {
         padding-top: 40px;
+    }
+
+    .button-container {
+        gap: 2px;
     }
 }
