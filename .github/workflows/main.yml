@@ -1,42 +1,30 @@
-name: Deploy
-
 on:
   push:
     branches:
-      - master   # or main — make sure it matches your real branch
+      - master
+  workflow_dispatch:
 
 jobs:
   deploy:
+    name: Hard pull and restart service
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH (hard reset)
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            set -e
+    - name: Install SSH key
+      run: |
+        install -m 600 -D /dev/null ~/.ssh/id_rsa
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
 
-            cd "${{ secrets.WORK_DIR }}"
+    - name: SSH and deploy
+      run: |
+        ssh -t ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          set -e
+          cd ${{ secrets.WORK_DIR }}
+          git fetch origin ${{ secrets.MAIN_BRANCH }}
+          git reset --hard origin/${{ secrets.MAIN_BRANCH }}
+          sudo systemctl restart the-world-bot
+        EOF
 
-            echo "Force syncing with origin/${{ secrets.MAIN_BRANCH }}..."
-            git fetch origin "${{ secrets.MAIN_BRANCH }}"
-            git reset --hard "origin/${{ secrets.MAIN_BRANCH }}"
-            git clean -fdx
-
-            echo "Setting up virtual environment..."
-            if [ -d .venv ]; then
-              source .venv/bin/activate
-            else
-              python3 -m venv .venv
-              source .venv/bin/activate
-            fi
-
-            pip install --upgrade pip
-            [ -f requirements.txt ] && pip install -r requirements.txt
-
-            echo "Restarting alina-website service..."
-            sudo systemctl restart alina-website
-            sudo systemctl status alina-website --no-pager --lines=5 || true
+    - name: Cleanup SSH
+      run: rm -rf ~/.ssh
