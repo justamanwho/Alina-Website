@@ -2,6 +2,12 @@
 A responsive website for a small tarot reading business, featuring service listings, pricing information, and a contact section.
 
 
+## Features
+- Fully responsive design (mobile, tablet, desktop)
+- Service pages with detailed descriptions
+- Pricing information section
+
+
 ## Setup
 
 1. Clone the repository:
@@ -27,7 +33,7 @@ A responsive website for a small tarot reading business, featuring service listi
    
 
 ## Links and Sources
-- website - astrotaroelin.com
+- website - https://astrotaroelin.com
 - [Telegram (Profile)](https://t.me/sixamprincess)
 - [Telegram Channel](https://t.me/vidvertoprotaro)
 - [WhatsApp](https://wa.me/qr/Q5FSEMNWBPYWH1)
