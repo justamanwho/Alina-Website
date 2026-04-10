@@ -3,9 +3,10 @@ A responsive website for a small tarot reading business, featuring service listi
 
 
 ## Features
-- Fully responsive design (mobile, tablet, desktop)
-- Service pages with detailed descriptions
-- Pricing information section
+- Responsive layout accessible on all devices
+- Clear service catalog with pricing transparency
+- Fast-loading static pages for better user experience
+- Multilingual support
 
 
 ## Setup
