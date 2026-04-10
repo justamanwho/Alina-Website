@@ -2,9 +2,32 @@
 A responsive website for a small tarot reading business, featuring service listings, pricing information, and a contact section.
 
 
-## Links
+## Setup
 
-- [Website](https://astrotaroelin.com)
+1. Clone the repository:
+   <br>git clone https://github.com/justamanwho/Tarot-Website.git
+   <br>cd Tarot-Website
+
+
+2. Create and activate virtual environment:
+   <br>python -m venv venv
+   <br>source venv/bin/activate
+
+
+3. Install dependencies:
+   <br>pip install -r requirements.txt
+
+
+4. Create a `.env` file with your secret key(can be anything):
+   <br>SECRET_KEY=secret_key
+
+
+5. Run the website:
+   <br>python3 app.py
+   
+
+## Links and Sources
+- website - astrotaroelin.com
 - [Telegram (Profile)](https://t.me/sixamprincess)
 - [Telegram Channel](https://t.me/vidvertoprotaro)
 - [WhatsApp](https://wa.me/qr/Q5FSEMNWBPYWH1)
@@ -12,5 +35,7 @@ A responsive website for a small tarot reading business, featuring service listi
 - [YouTube](https://www.youtube.com/@sixamprincess)
 
 
-## To-Do List
-- make readme even better
+<img width="1920" height="936" alt="alina-website" src="https://github.com/user-attachments/assets/a4a5e1d7-691e-4f99-93fa-9980f303cb50" />
+
+
+## To Do List:
